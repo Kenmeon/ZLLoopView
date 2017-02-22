@@ -8,11 +8,12 @@
 
 #import "ViewController.h"
 #import "ZLLoopView.h"
+#import "ZLLoopViewBase.h"
 
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 //类扩展/匿名分类  定义私有属性和方法
-@interface ViewController ()<ZLLoopViewDelegate>
+@interface ViewController ()<ZLLoopViewDelegateBase>
 {
     
 }
@@ -40,15 +41,15 @@
     [self loadData];
     
     //pageControl
-    _pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth-40, 40)];
-    _pageControl.center = CGPointMake((kScreenWidth)/2.0, 200);
-    _pageControl.currentPage = 0;
+    //_pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth-40, 40)];
+    //_pageControl.center = CGPointMake((kScreenWidth)/2.0, 200);
+    //_pageControl.currentPage = 0;
     
-    _pageControl.numberOfPages = _urls.count;
+    //_pageControl.numberOfPages = _urls.count;
     
-    _pageControl.pageIndicatorTintColor = [UIColor redColor];
-    _pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
-    [self.view addSubview:_pageControl];
+    //_pageControl.pageIndicatorTintColor = [UIColor redColor];
+    //_pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
+    //[self.view addSubview:_pageControl];
     
     
     //网络
@@ -59,16 +60,16 @@
     
     
     //本地图片的名字数组
-    ZLLoopView *loopView = [[ZLLoopView alloc]initWithLoaclImage:_urls];
+    ZLLoopViewBase *loopView = [[ZLLoopViewBase alloc]initWithFrame:CGRectMake(20, 20, self.view.bounds.size.width-40, 200) WithLoaclImage:_urls];
     loopView.delegata = self;
-    loopView.frame = CGRectMake(20, 20, self.view.bounds.size.width-40, 200);
+    //loopView.frame = CGRectMake(20, 20, self.view.bounds.size.width-40, 200);
     [self.view addSubview:loopView];
-    loopView.pageControl = _pageControl;
+    //loopView.pageControl = _pageControl;
     
-    [self.view insertSubview:_pageControl aboveSubview:loopView];
+    //[self.view insertSubview:_pageControl aboveSubview:loopView];
 
 }
-- (void)clickImageNumber:(NSInteger)num
+- (void)clickImageNumberBase:(NSInteger)num
 {
     NSLog(@"click:%ld",num+1);
 }

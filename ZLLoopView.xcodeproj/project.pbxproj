@@ -38,6 +38,7 @@
 		8144F1291DF156BD003E0B43 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8144F1251DF156BD003E0B43 /* 2.jpeg */; };
 		8144F12A1DF156BD003E0B43 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8144F1261DF156BD003E0B43 /* 3.jpeg */; };
 		8144F12B1DF156BD003E0B43 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8144F1271DF156BD003E0B43 /* 4.jpeg */; };
+		818B49D21E5C2E4C001F5AA1 /* ZLLoopViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 818B49D11E5C2E4C001F5AA1 /* ZLLoopViewBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		8144F1251DF156BD003E0B43 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		8144F1261DF156BD003E0B43 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		8144F1271DF156BD003E0B43 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		818B49D01E5C2E4C001F5AA1 /* ZLLoopViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLLoopViewBase.h; sourceTree = "<group>"; };
+		818B49D11E5C2E4C001F5AA1 /* ZLLoopViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLLoopViewBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				8144F0B81DF1566A003E0B43 /* AppDelegate.m */,
 				8144F0BA1DF1566A003E0B43 /* ViewController.h */,
 				8144F0E71DF156A0003E0B43 /* ViewController.m */,
+				818B49D01E5C2E4C001F5AA1 /* ZLLoopViewBase.h */,
+				818B49D11E5C2E4C001F5AA1 /* ZLLoopViewBase.m */,
 				8144F0E91DF156AC003E0B43 /* ZLLoopCollectionViewCell.h */,
 				8144F0EA1DF156AC003E0B43 /* ZLLoopCollectionViewCell.m */,
 				8144F0EB1DF156AC003E0B43 /* ZLLoopLayout.h */,
@@ -401,6 +406,7 @@
 				8144F1231DF156B5003E0B43 /* UIView+WebCacheOperation.m in Sources */,
 				8144F0F01DF156AC003E0B43 /* ZLLoopLayout.m in Sources */,
 				8144F11D1DF156B5003E0B43 /* UIButton+WebCache.m in Sources */,
+				818B49D21E5C2E4C001F5AA1 /* ZLLoopViewBase.m in Sources */,
 				8144F1151DF156B5003E0B43 /* NSData+ImageContentType.m in Sources */,
 				8144F11C1DF156B5003E0B43 /* SDWebImagePrefetcher.m in Sources */,
 				8144F1191DF156B5003E0B43 /* SDWebImageDownloader.m in Sources */,
@@ -645,6 +651,7 @@
 				8144F0E01DF1566A003E0B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8144F0E11DF1566A003E0B43 /* Build configuration list for PBXNativeTarget "ZLLoopViewTests" */ = {
 			isa = XCConfigurationList;
@@ -653,6 +660,7 @@
 				8144F0E31DF1566A003E0B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8144F0E41DF1566A003E0B43 /* Build configuration list for PBXNativeTarget "ZLLoopViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +669,7 @@
 				8144F0E61DF1566A003E0B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
